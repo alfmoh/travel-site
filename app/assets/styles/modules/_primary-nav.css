@@ -41,8 +41,8 @@
     
     a {
       color: #FFF;
-        text-decoration: none;
         font-weight: 300;
+        text-decoration: none;
         display: block;
         padding: 5px 8px;
         font-size: .8rem;
@@ -51,7 +51,11 @@
         @mixin atMedium {
             font-size: 1rem;
             padding: 12px 0;
-            background-clip: transparent;
+            background-color: transparent;
+            
+         &.is-current-link {
+        color: #fabb69;
+      }
         }
     }
 }
